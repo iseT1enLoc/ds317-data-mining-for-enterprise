@@ -12,7 +12,7 @@ function Students(): JSX.Element {
     filterType: "checkbox",
   };
   return (
-    <div className="mt-10 mx-auto pb-4">
+    <div className="mt-10 mx-auto pb-4 min-h-screen">
       <div className="flex justify-center">
         <MUIDataTable
           title={"Employee List"}
