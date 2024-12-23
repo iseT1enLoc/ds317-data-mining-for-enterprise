@@ -4,8 +4,8 @@
 /.vscode
 
 # dependencies
-/academic-advisor-be/node_modules
-/academic-advisor-fe/node_modules
+/web/academic-advisor-be/node_modules
+/web/academic-advisor-fe/node_modules
 /node_modules
 /.pnp
 .pnp.js
