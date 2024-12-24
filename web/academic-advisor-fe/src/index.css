@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+     .menu-active {
+        @apply bg-sky-300 rounded-lg cursor-pointer
+    }
+}

@@ -1,0 +1,43 @@
+1. thongtinsv
+gioitinh: 1 Nam, 0: Nữ
+Địa chỉ thường trú = diachi_thuongtru + diachi_phuongxa + diachi_quanhuyen + diachi_tinhtp
+
+2. diem
+Những môn sotc = 0 là những môn khogn6 tính vào điểm ĐTB cũng như điểm tích lũy
+trangthai: 0: hủy; 1: bình thường; 2: trả nợ; 3: cải thiện; 4: Miễn; 5: Hoãn 
+Tính điểm TB HK/NH thì lọc trangthai = 1,2,3
+Tính ĐTB toàn khóa thì chọn trangthai = 1
+
+4. avxeplop
+Công thức xếp lớp:
+2020: =IF(M6 < 250,"AVSC1",IF(M6 < 300, "AVSC2", IF(M6 < 350, "ENG01", IF(M6 < 400, "ENG02", IF(M6 < 450, "ENG03", IF(B6 = "CQUI", "Miễn ENG03",IF(M6 < 500, "ENG04", "ENG05")))))))
+2019: =IF(Q2 < 250,"AVSC1",IF(Q2 < 300, "AVSC2", IF(Q2 < 350, "ENG01", IF(Q2 < 400, "ENG02", IF(Q2 < 450, "ENG03", IF(F2 = "CQUI", "Miễn ENG03",IF(Q2 < 500, "ENG04", "ENG05")))))))
+2018: 
+MAMH	Điểm
+AVSC1	<250
+AVSC2	<300
+ENG01	<350
+ENG02	<400
+ENG03	<450
+ENG04	<500
+ENG05	>=500
+2017: =IF(E2>=96, "Anh văn 3", IF(E2>=72, "Anh văn 2", IF(E2>=40, "Anh văn 1", "Anh văn bổ túc")))
+2016: =IF(E2<26, "Anh văn bổ túc", IF(E2<55, "Anh văn 1", "Anh văn 2"))
+
+
+6. giayxacnhan
+maloaigiay	tenloaigiay
+1			Giấy xác nhận sinh viên
+2			Giấy làm lại thẻ sinh viên
+3			Giấy vay vốn ngân hàng
+4			Giấy miễn giảm học phí
+5			Giấy xác nhận điểm rèn luyện
+6			Giấy xác nhận Ưu đãi Giáo dục
+7			Giấy xác nhận Xác nhận Học bổng
+
+7. XLHV
+id	ten
+2	Cảnh cáo
+5	Thôi học
+7	Gia hạn
+8	Tự do
